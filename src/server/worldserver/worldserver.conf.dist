@@ -829,7 +829,7 @@ StrictPlayerNames = 0
 StrictCharterNames = 0
 StrictPetNames = 0
 DBC.Locale = 0
-DeclinedNames = 0
+DeclinedNames = 1
 Expansion = 4
 MinPlayerName = 2
 MinCharterName = 2
@@ -2252,7 +2252,7 @@ UI.ShowQuestLevelsInDialogs = 0
 #
 ###################################################################################################
 
-Appender.Console=1,3,0
+Appender.Console=1,3,0,13 9 11 11 9 9
 Appender.Server=2,2,0,Server.log,w
 Appender.GM=2,2,0,GM.log
 Appender.DBErrors=2,2,0,DBErrors.log
@@ -2380,3 +2380,20 @@ Currency.MaxJusticePoints = 4000
 Currency.StartConquestPoints = 0
 Currency.ConquestPointsDefaultWeekCap = 1350
 Currency.ConquestPointsArenaReward = 180
+
+#####################################################################################################
+# MAIL EXTERNAL
+#
+#    External.Mail.Enable
+#        Enable external mail delivery from mail_external table.
+#        Default: 0 (disabled)
+#                 1 (enabled)
+#
+#    External.Mail.Interval
+#        Mail delivery delay time for item sending from mail_external table, in minutes.
+#        Default: 5 minutes
+#
+#####################################################################################################
+
+External.Mail.Enable = 0
+External.Mail.Interval = 5
